@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+}
+
+p, div, section {
+    font-size: 16px;
+}
+
+:root {
+	--main-color: #FFDF9B;
+	--accent-color: #FF9B9B;
+	--inverse-color: #518EE2;
+	--positive-color: #61DE61;
+	--negative-color: #FF9B9B;
+	--believer: #FFA300;
+	--nonbeliever: #6167C6;
+	--dataverse-link: #FF6A00;
+
+	--company_risen: #E1A43D;
+	--company_synapse: #90CEFF;
+	--company_endymion: #E5365D;
+	--company_kahgy: #BD2B2B;
+}
+
+body {
+    height: 100%;
+    font-family: monospace;
+    color: var(--main-color);
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: underline !important;
+}
+
+.section-container {
+    clip-path: polygon(
+                    0 10%,
+                    100% 0,
+                    100% 90%,
+                    0 100%
+               );
+}
+
+section {
+    color: var(--inverse-color);
+    clip-path: polygon(
+                    0 10%,
+                    100% 0,
+                    100% 90%,
+                    0 100%
+               );
+}
+
+@keyframes BackgroundAnimation {
+	0% { transform: translateX(0px) translateY(0px); }
+	100% { transform: translateX(256px) translateY(-64px); }
+}
