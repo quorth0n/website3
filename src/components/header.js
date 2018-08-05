@@ -6,13 +6,37 @@ const Header = ({ siteTitle }) => (
     style={{
       marginBottom: '3rem',
       borderBottom: '2px solid #FF9B9B',
+      backgroundImage: "url('http://systemspace.link/res/img/bg/home-header.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'bottom',
+      backgroundAttachment: 'fixed',
+      padding: '20vw',
+      paddingLeft: '5vw'
     }}
   >
-    <div
+    <h1
+      style={{
+        fontSize: '8vw',
+        textShadow: '3px 6px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000, 1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000',
+        color: '#fff',
+        display: 'inline',
+        /*position: 'relative',
+        top: '5em',
+        left: '2em',*/
+        //margin: '3.9rem',
+        fontStyle: 'italic',
+        marginBottom: '1em'
+      }}
+    >
+      Cogito, 
+      <br/><br/>
+      ergo sum.
+    </h1>
+{/*     <div
       style={{
         margin: '0 auto',
         maxWidth: 980,
-        padding: '1.45rem 1.0875rem',
+        padding: '3.9rem'
       }}
     >
       <h1 style={{ margin: 0, textAlign: 'center',fontSize: '18px' }}>
@@ -21,6 +45,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: '#FF9B9B',
             textDecoration: 'none',
+//            fontSize: '18px'
           }}
         >
           {siteTitle} // whirish
@@ -95,7 +120,7 @@ const Header = ({ siteTitle }) => (
         /email
         </a>
       </h2>
-    </div>
+    </div>*/ }
   </div>
 );
 
